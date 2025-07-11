@@ -11,10 +11,10 @@ app.use(express.json());
 
 app.post('/proxy', async (req, res) => {
   try {
-    const headers = {
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${process.env.SCENARIO_API_KEY}`
-    };
+   const headers = {
+  'Content-Type': 'application/json',
+  'Authorization': 'Bearer api_vCyyEGdgfqTSkkuhgPBCpydz'  // Remplace bien ici ta clé exacte
+};
 
     console.log("🟢 Requête vers Scenario avec headers:", headers);
     console.log("📦 Corps de la requête:", req.body);
